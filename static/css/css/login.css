@@ -1,0 +1,32 @@
+
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.login {
+background: linear-gradient(to right, #0f2027, #203a43, #2c5364);  /* dark blue gradient */
+background-image: url(https://images.pexels.com/photos/1363794/pexels-photo-1363794.jpeg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+
+  height: 100vh;
+  align-items: center;
+
+}
+
+ .login-box {
+        background-color:white;
+        box-shadow:0px 0px 10px;
+        width: max-content;
+        
+        
+}
+
+
+
+
+
+

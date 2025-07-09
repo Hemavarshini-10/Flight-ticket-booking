@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Flight ticket</title>
+        <link href="/static/css/css/search.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+       <!-- Navbar -->
+            <nav class="navbar navbar-expand-sm bg-dark ">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-4 text-light " href="#">Flight Booking</a>
+             
+                      <ul class="navbar-nav ms-auto gap-3  " >
+                    <li class="nav-item"><a href='/' class="nav-link text-light">Home</a></li> 
+                    <li class="nav-item "><a href='/login' class="nav-link text-light">Login</a> </li>
+                     <li class="nav-item"><a href="#about"  class="nav-link text-light">About</a></li>
+                    <li class="nav-item"><a href="#contacts"  class="nav-link text-light">Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+            <div class="container mt-5">
+                <h3 class="mb-4 text-light "><b>Check here for Flights</b></h3><br>
+                 <form class="row g-3" method="get" action="/search" >
+                    <div class="col-md-4 ">
+                    <input type="text"placeholder="From" required class="form-control" name="from_city">
+                
+                    <input type="text" placeholder="To" required  class="form-control mt-5 " name="to_city" >
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-primary w-100 mt-5 ms-5">Search Flights</button>
+
+                    </div>
+                </form>
+            </div>
+       
+    </body>
+</html>

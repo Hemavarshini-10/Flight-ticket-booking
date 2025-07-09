@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 40px;
+    color: #003366;
+}
+
+.flight-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+}
+
+.flight-card:hover {
+    transform: scale(1.02);
+}
+
+.btn-book {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-book:hover {
+    background-color: #0056b3;
+}

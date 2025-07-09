@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Results</title>
+    <link href="/static/css/css/result.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h3 class="heading">✈️ Flights from {{from_city}} to {{to_city}}</h3>
+
+        <div class="row mt-5">
+        {% if flights %}
+            {% for flight in flights %}
+                <div class="col-md-6 mb-4">
+                    <div class="flight-card p-4">
+                        <h4 class="mb-2">{{ flight.airline }}</h4>
+                        <p><strong>From:</strong> {{ flight.from_city }} → <strong>To:</strong> {{ flight.to_city }}</p>
+                        <p><strong>Time:</strong> {{ flight.time }}</p>
+                        <p><strong>Price:</strong> ₹{{ flight.price }}</p>
+
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p class="text-center mt-4">No flights found for the selected route.</p>
+        {% endif %}
+        </div>
+    </div>
+
+</body>
+</html>

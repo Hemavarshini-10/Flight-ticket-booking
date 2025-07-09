@@ -1,0 +1,27 @@
+body {
+    background-color: #e8f0fe;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 100px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: green;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
